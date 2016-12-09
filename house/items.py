@@ -8,14 +8,42 @@
 import scrapy
 
 
-class HouseItem(scrapy.Item):
+class LianJiaBriefItem(scrapy.Item):
+    name = scrapy.Filed()
+    url = scrapy.Filed()
+    lianJiaBianHao = scrapy.Filed()
+
+    xiaoQuMingCheng = scrapy.Field()
+    xiaoQuUrl = scrapy.Field()
+    fangWuHuXing = scrapy.Field()
+    fangWuMianJi = scrapy.Filed()
+    fangWuChaoXiang = scrapy.Filed()
+    zhuangXiuQingKuang = scrapy.Field()
+    peiBeiDianTi = scrapy.Field()
+
+    suoZaiLouCeng = scrapy.Field()
+    zongLouCeng = scrapy.Field()
+    jianFangShiJian = scrapy.Filed()
+    jianZhuLeiXing = scrapy.Filed()
+    shangQuan = scrapy.Filed()
+    shangQuanUrl = scrapy.Field()
+
+    guanZhuRenShu = scrapy.Field()
+    kanGuoRenShu = scrapy.Field()
+    faBuShiJian = scrapy.Field()
+
+    fangYuanBiaoQian = scrapy.Field()
+
+    zongJiaGe = scrapy.Field()
+    danWeiFangJia = scrapy.Field()
+
+class LianJiaDetailItem(scrapy.Item):
     # define the fields for your item here like:
     name = scrapy.Field()
     lianJiaBianHao = scrapy.Field()
 
     guanZhuRenShu = scrapy.Field()
     kanGuoRenShu = scrapy.Field()
-    faBuShiJian = scrapy.Field()
 
     zongJiaGe = scrapy.Field()
     danWeiFangJia = scrapy.Field()
@@ -61,5 +89,3 @@ class HouseItem(scrapy.Item):
     huXingFenJian = scrapy.Filed()
     fangYuanZhaoPian = scrapy.Filed()
     kanFangJiLu = scrapy.Filed()
-
-    pass
